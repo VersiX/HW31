@@ -1,0 +1,367 @@
+@font-face {
+  font-family: Lato;
+  src: url("fonts/Lato-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Lato;
+  src: url("fonts/Lato-Bold.ttf");
+  font-weight: bold;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main {
+  background-color: #292d3e;
+  background-image: url("img/main_bg.png");
+  background-size: cover;
+  width: 1008px;
+  height: 861px;
+  overflow: auto;
+}
+
+.item {
+  background-color: #262836;
+  -webkit-box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 23px 57px 0px rgba(0, 0, 0, 0.4);
+  margin-left: 230px;
+  margin-top: 146px;
+  width: 600px;
+  height: 541px;
+  overflow: hidden;
+}
+
+.item-head {
+  background-color: #303242;
+  width: 600px;
+  height: 115px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.item-body {
+  padding: 32px 41px 40px 47px;
+  max-height: 354px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.container:not(:first-child) {
+  display: none;
+}
+
+.tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33.333%;
+  height: 100%;
+}
+
+.tab:hover {
+  background-color: #4b4e67;
+}
+
+.tab-wrapper {
+  width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.tab__name {
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgba(183, 186, 205, 0.702);
+  line-height: 1.75;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.tab__icon {
+  opacity: 0.702;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #b7bacd;
+}
+
+.tab__icon--active {
+  fill: white;
+  opacity: 1;
+}
+
+.tab--active .tab__name {
+  color: #fbfbfb;
+}
+
+.tab--active .tab__icon {
+  fill: #fbfbfb;
+  opacity: 1;
+}
+
+.slider {
+  width: 33.333%;
+  color: #fbfbfb;
+  border: solid 1px #fbfbfb;
+  border-left: none;
+  border-right: none;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.slider--center {
+  margin-left: 33.333%;
+}
+
+.slider--end {
+  margin-left: 66.666%;
+}
+
+.slider-wrapper {
+  width: 500px;
+  height: 2px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 26px;
+  margin-right: 40px;
+}
+
+.rating {
+  width: 131px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rating-star {
+  width: 19px;
+  height: 19px;
+}
+
+.rating-star path {
+  fill: #bdc3c7;
+}
+
+.rating-star--active path {
+  fill: #ffdd3f;
+}
+
+.right-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 25px;
+}
+
+.right__p {
+  font-size: 14px;
+  font-family: "Lato";
+  color: #b7bacd;
+  line-height: 1.571;
+  text-align: left;
+  letter-spacing: 0.09px;
+  margin: 20px 0 60px 0;
+}
+
+.right-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.title__main {
+  font-size: 32px;
+  font-family: "Lato";
+  color: white;
+  text-align: left;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+  margin-top: 6px;
+  margin-bottom: 7px;
+}
+
+.title__secondary {
+  font-size: 14px;
+  font-family: "Lato";
+  color: #fdfdfd;
+  text-align: left;
+  font-weight: 400;
+  margin: 0;
+}
+
+.price__discount {
+  font-size: 13px;
+  font-family: "Lato";
+  color: #fedc3f;
+  font-weight: bold;
+  letter-spacing: 0.03px;
+}
+
+.price__value {
+  font-size: 32px;
+  font-family: "Lato";
+  font-weight: bold;
+  color: white;
+}
+
+.btn--buy {
+  font-size: 16px;
+  font-family: "Lato";
+  color: white;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: center;
+  width: 164px;
+  height: 55px;
+  border: none;
+  border-radius: 2px;
+  background-color: #13e28d;
+}
+
+.btn--buy:hover {
+  background-color: #00ac64;
+  -webkit-transition: background-color 0.1s ease;
+  transition: background-color 0.1s ease;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.comment-avatar path {
+  fill: white;
+}
+
+.comment-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 250px;
+  margin-left: 15px;
+}
+
+.comment__usr {
+  font-size: 16px;
+  font-family: "Lato";
+  color: #fdfdfd;
+  text-align: left;
+  font-weight: 400;
+  margin: 0;
+}
+
+.comment__text {
+  font-size: 14px;
+  font-family: "Lato";
+  color: #b7bacd;
+  line-height: 1.571;
+  text-align: left;
+  letter-spacing: 0.09px;
+}
+
+.buy {
+  min-width: 250px;
+}
+
+.buy__title {
+  font-size: 20px;
+  font-family: "Lato";
+  color: #fdfdfd;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.buy__text {
+  font-size: 14px;
+  font-family: "Lato";
+  color: #b7bacd;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */
