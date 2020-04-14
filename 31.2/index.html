@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW31.2 Calculator</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="calc">
+        <div class="calc-head">
+            <h1 class="head__title">
+                Calculator
+            </h1>
+            <div class="head-buttons">
+                <div class="head__btn" id="min">&#x2500;</div>
+                <div class="head__btn" id="full">&#9723;</div>
+                <div class="head__btn head__btn--close" id="close">&#128936;</div>
+            </div>
+        </div>
+        <div class="calc-display">
+            <div id="display__history"></div>
+            <div id="display__input">0</div>
+        </div>
+        <div class="calc-numpad">
+            <div class="row">
+                <div class="col"><button class="btn btn--adv" id="percent">%</button></div>
+                <div class="col"><button class="btn btn--action">CE</button></div>
+                <div class="col"><button class="btn btn--action">C</button></div>
+                <div class="col"><button class="btn btn--action">DEL</button></div>
+            </div>
+            <div class="row">
+                <div class="col"><button class="btn btn--adv" id="reverse">1/x</button></div>
+                <div class="col"><button class="btn btn--adv" id="sq"><i>x<sup>2</sup></i></button></div>
+                <div class="col"><button class="btn btn--adv" id="root">sq root</button></div>
+                <div class="col"><button class="btn btn--basic" id="divide">&#247;</button></div>
+            </div>
+            <div class="row">
+                <div class="col"><button class="btn btn--num">7</button></div>
+                <div class="col"><button class="btn btn--num">8</button></div>
+                <div class="col"><button class="btn btn--num">9</button></div>
+                <div class="col"><button class="btn btn--basic" id="multiply">&#x1f7a8;</button></div>
+            </div>
+            <div class="row">
+                <div class="col"><button class="btn btn--num">4</button></div>
+                <div class="col"><button class="btn btn--num">5</button></div>
+                <div class="col"><button class="btn btn--num">6</button></div>
+                <div class="col"><button class="btn btn--basic" id="minus">-</button></div>
+            </div>
+            <div class="row">
+                <div class="col"><button class="btn btn--num">1</button></div>
+                <div class="col"><button class="btn btn--num">2</button></div>
+                <div class="col"><button class="btn btn--num">3</button></div>
+                <div class="col"><button class="btn btn--basic" id="plus">+</button></div>
+            </div>
+            <div class="row">
+                <div class="col"><button class="btn btn--num">&#177;</button></div>
+                <div class="col"><button class="btn btn--num">0</button></div>
+                <div class="col"><button class="btn btn--num">.</button></div>
+                <div class="col"><button class="btn btn--action">=</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
